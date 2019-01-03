@@ -4,7 +4,7 @@
     background: white;
 }
 
-.circle-1, .circle-2, .circle-3 {
+.signal-skyblue, .signal-yellow, .signal-red {
     width: 80px;
     height: 80px;
     background: grey;

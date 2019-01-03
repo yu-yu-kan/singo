@@ -1,14 +1,25 @@
 $(function() {
-    $(".my-button").on("click", function() {
-        if($(".circle-1").css("background-color")!== "rgb(128, 128, 128)") {
-            $(".circle-1").css("background-color", "");
-            $(".circle-2").css("background-color", "yellow");
-        } else if($(".circle-2").css("background-color")!== "rgb(128, 128, 128)") {
-            $(".circle-2").css("background-color", "");
-            $(".circle-3").css("background-color", "red");
-        } else {
-            $(".circle-3").css("background-color", "");
-            $(".circle-1").css("background-color", "skyblue");
-        }
+    $(".my-button").click(function() {
+        setTimeout(function() {
+            $(".signal-skyblue").css("background-color", "skyblue");
+        }, 1000);
+        setTimeout(function() {
+            $(".signal-skyblue").css("background-color", "grey");
+        }, 2000);
+        setTimeout(function() {
+            $(".signal-yellow").css("background-color",  "yellow");
+        }, 2000);
+        setTimeout(function() {
+            $(".signal-yellow").css("background-color", "grey");
+        }, 3000);
+        setTimeout(function() {
+            $(".signal-red").css("background-color", "red");
+        }, 3000);
+        setTimeout(function() {
+            $(".signal-red").css("background-color", "grey");
+        }, 4000);
+        setTimeout(function() {
+            $(".signal-skyblue").css("background-color", "skyblue");
+        }, 4000);
     });
 })
