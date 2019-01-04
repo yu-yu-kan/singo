@@ -1,5 +1,6 @@
 $(function() {
     $(".my-button").click(function() {
+        $(".my-button").prop("disabled", true);
         setTimeout(function() {
             $(".signal-skyblue").css("background-color", "skyblue");
         }, 1000);
