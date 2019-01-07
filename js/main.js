@@ -1,4 +1,4 @@
-var delay = function (delayTime) {
+const delay = function (delayTime) {
   return new Promise(function(resolve) {
     setTimeout(function() {
       resolve();
